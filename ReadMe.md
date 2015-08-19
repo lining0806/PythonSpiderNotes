@@ -45,6 +45,7 @@ Urllib2：data为string
 ```
 
 ### 2. 对于反爬虫机制的处理  
+
 ** 2.1 模拟登陆情况 ** 
 这种属于post请求情况，先向服务器发送表单数据，服务器再将返回的cookie存入本地。  
 ```
@@ -57,7 +58,8 @@ Urllib2：data为string
 	data = urllib.urlencode(data) # 编码工作，由dict转为string
 	req = urllib2.Request(url=url, data=data) # POST请求发送，可用于用户名密码登陆情况
 	response = urllib2.urlopen(req)
-```
+```  
+
 ** 2.2 使用cookie登陆情况 **
 使用cookie登陆，服务器会认为你是一个已登陆的用户，所以就会返回给你一个已登陆的内容。因此，需要验证码的情况可以使用带验证码登陆的cookie解决。  
 ```
@@ -73,7 +75,8 @@ response2 = requests_session.get(url_login) # 已登陆，因为之前拿到了R
 response3 = requests_session.get(url_results) # 已登陆，因为之前拿到了Response Cookie！
 ```
 相关参考：[网络爬虫-验证码登陆](http://www.lining0806.com/6-%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB-%E9%AA%8C%E8%AF%81%E7%A0%81%E7%99%BB%E9%99%86/)
-参考项目：[爬取知乎网站](https://github.com/lining0806/ZhihuSpider)
+参考项目：[爬取知乎网站](https://github.com/lining0806/ZhihuSpider)  
+
 ** 2.3 伪装成浏览器，或者反“反盗链” **
 ```
 headers = {'User-Agent':'XXXXX'} # 伪装成浏览器访问，适用于拒绝爬虫的网站
