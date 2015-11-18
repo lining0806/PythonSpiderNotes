@@ -212,7 +212,7 @@ def multi_open(opener, *arg):
 
 Selenium是一款自动化测试工具。它能实现操纵浏览器，包括字符填充、鼠标点击、获取元素、页面切换等一系列操作。总之，凡是浏览器能做的事，Selenium都能够做到。
 
-这里我列出在给定城市列表后，使用selenium来动态抓取[去哪儿网](http://flight.qunar.com/)的票价信息的代码。
+这里列出在给定城市列表后，使用selenium来动态抓取[去哪儿网](http://flight.qunar.com/)的票价信息的代码。
 
 相关参考：[网络爬虫之Selenium使用代理登陆：爬取去哪儿网站](https://github.com/lining0806/QunarSpider) 
 
