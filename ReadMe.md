@@ -254,6 +254,6 @@ Selenium是一款自动化测试工具。它能实现操纵浏览器，包括字
 
 Scrapy是一个基于Twisted的开源的Python爬虫框架，在工业中应用非常广泛。  
 
-相关内容可以参考[基于Scrapy网络爬虫的搭建](http://www.lining0806.com/%E5%9F%BA%E4%BA%8Escrapy%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E7%9A%84%E6%90%AD%E5%BB%BA/)，同时我给出这篇文章介绍的[微信搜索](http://weixin.sogou.com/weixin)爬取的项目代码，给大家作为学习参考。
+相关内容可以参考[基于Scrapy网络爬虫的搭建](http://www.lining0806.com/%E5%9F%BA%E4%BA%8Escrapy%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB%E7%9A%84%E6%90%AD%E5%BB%BA/)，同时给出这篇文章介绍的[微信搜索](http://weixin.sogou.com/weixin)爬取的项目代码，给大家作为学习参考。
 
 参考项目：[使用Scrapy或Requests递归抓取微信搜索结果](https://github.com/lining0806/WechatSearchProjects)
