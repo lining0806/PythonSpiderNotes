@@ -1,11 +1,5 @@
 # Python入门网络爬虫之精华版  
 
-#### Author: LiNing 
-
-#### Email: lining0806@gmail.com
-
-#### Blog: [宁哥的小站](http://www.lining0806.com/)
-
 *** 
 
 Python学习网络爬虫主要分3个大的版块：**抓取**，**分析**，**存储**  
