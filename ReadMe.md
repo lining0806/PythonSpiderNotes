@@ -64,6 +64,10 @@ Urllib2：data为string
 	response = urllib2.urlopen(full_url)
 ```
 
+相关参考：[网易新闻排行榜抓取回顾](http://www.lining0806.com/%E7%BD%91%E6%98%93%E6%96%B0%E9%97%BB%E6%8E%92%E8%A1%8C%E6%A6%9C%E6%8A%93%E5%8F%96%E5%9B%9E%E9%A1%BE/)
+
+参考项目：[网络爬虫之最基本的爬虫：爬取网易新闻排行榜](https://github.com/lining0806/NewsSpider)
+
 ### 2. 对于登陆情况的处理  
 
 **2.1 使用表单登陆**  
@@ -103,7 +107,7 @@ response3 = requests_session.get(url_results) # 已登陆，因为之前拿到�
 
 相关参考：[网络爬虫-验证码登陆](http://www.lining0806.com/6-%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB-%E9%AA%8C%E8%AF%81%E7%A0%81%E7%99%BB%E9%99%86/)  
 
-参考项目：[爬取知乎网站](https://github.com/lining0806/ZhihuSpider)  
+参考项目：[网络爬虫之用户名密码及验证码登陆：爬取知乎网站](https://github.com/lining0806/ZhihuSpider)  
 
 ### 3. 对于反爬虫机制的处理 
 
@@ -187,7 +191,7 @@ def multi_open(opener, *arg):
 
 ### 5. 多进程抓取  
 
-这里针对[华尔街见闻](http://live.wallstreetcn.com/ )进行多进程抓取的实验对比：[Python多进程抓取](https://github.com/lining0806/Spider_Python) 与 [Java多进程抓取](https://github.com/lining0806/Spider)  
+这里针对[华尔街见闻](http://live.wallstreetcn.com/ )进行并行抓取的实验对比：[Python多进程抓取](https://github.com/lining0806/Spider_Python) 与 [Java单线程和多线程抓取](https://github.com/lining0806/Spider)  
 
 相关参考：[关于Python和Java的多进程多线程计算方法对比](http://www.lining0806.com/%E5%85%B3%E4%BA%8Epython%E5%92%8Cjava%E7%9A%84%E5%A4%9A%E8%BF%9B%E7%A8%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95%E5%AF%B9%E6%AF%94/)  
 
