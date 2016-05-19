@@ -163,8 +163,7 @@ Urllib2：
 
 ```
 def multi_session(session, *arg):
-	while True:
-		retryTimes = 20
+	retryTimes = 20
 	while retryTimes>0:
 		try:
 			return session.post(*arg)
@@ -177,8 +176,7 @@ def multi_session(session, *arg):
 
 ```
 def multi_open(opener, *arg):
-	while True:
-		retryTimes = 20
+	retryTimes = 20
 	while retryTimes>0:
 		try:
 			return opener.open(*arg)
