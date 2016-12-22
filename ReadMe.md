@@ -224,7 +224,7 @@ Selenium是一款自动化测试工具。它能实现操纵浏览器，包括字
 
 可以利用开源的Tesseract-OCR系统进行验证码图片的下载及识别，将识别的字符传到爬虫系统进行模拟登陆。当然也可以将验证码图片上传到打码平台上进行识别。如果不成功，可以再次更新验证码识别，直到成功为止。  
 
-参考项目：[Captcha1](https://github.com/lining0806/PythonSpiderNotes/tree/master/Captcha1)
+参考项目：[验证码识别项目第一版：Captcha1](https://github.com/lining0806/PythonSpiderNotes/tree/master/Captcha1)
 
 **爬取有两个需要注意的问题：**
 
