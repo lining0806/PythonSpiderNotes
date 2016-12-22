@@ -189,7 +189,7 @@ def multi_open(opener, *arg):
 
 ### 5. 多进程抓取  
 
-这里针对[华尔街见闻](http://live.wallstreetcn.com/ )进行并行抓取的实验对比：[Python多进程抓取](https://github.com/lining0806/Spider_Python) 与 [Java单线程和多线程抓取](https://github.com/lining0806/Spider)  
+这里针对[华尔街见闻](http://live.wallstreetcn.com/ )进行并行抓取的实验对比：[Python多进程抓取](https://github.com/lining0806/Spider_Python) 与 [Java单线程和多线程抓取](https://github.com/lining0806/Spider_Java)  
 
 相关参考：[关于Python和Java的多进程多线程计算方法对比](http://www.lining0806.com/%E5%85%B3%E4%BA%8Epython%E5%92%8Cjava%E7%9A%84%E5%A4%9A%E8%BF%9B%E7%A8%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95%E5%AF%B9%E6%AF%94/)  
 
