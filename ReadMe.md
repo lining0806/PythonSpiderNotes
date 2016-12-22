@@ -66,7 +66,7 @@ Urllib2：data为string
 
 相关参考：[网易新闻排行榜抓取回顾](http://www.lining0806.com/%E7%BD%91%E6%98%93%E6%96%B0%E9%97%BB%E6%8E%92%E8%A1%8C%E6%A6%9C%E6%8A%93%E5%8F%96%E5%9B%9E%E9%A1%BE/)
 
-参考项目：[网络爬虫之最基本的爬虫：爬取网易新闻排行榜](https://github.com/lining0806/PythonSpiderNotes/tree/master/NewsSpider)
+参考项目：[网络爬虫之最基本的爬虫：爬取网易新闻排行榜](NewsSpider)
 
 ### 2. 对于登陆情况的处理  
 
