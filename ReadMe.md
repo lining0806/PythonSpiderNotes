@@ -263,7 +263,7 @@ Scrapy是一个基于Twisted的开源的Python爬虫框架，在工业中应用�
 
 在网站根目录下放一个robots.txt文本文件（如 https://www.taobao.com/robots.txt ），里面可以指定不同的网络爬虫能访问的页面和禁止访问的页面，指定的页面由正则表达式表示。网络爬虫在采集这个网站之前，首先获取到这个robots.txt文本文件，然后解析到其中的规则，然后根据规则来采集网站的数据。
 
-### Robots协议规则
+### 1. Robots协议规则
 
 	User-agent: 指定对哪些爬虫生效
 	Disallow: 指定不允许访问的网址
@@ -271,7 +271,7 @@ Scrapy是一个基于Twisted的开源的Python爬虫框架，在工业中应用�
 
 注意: 一个英文要大写，冒号是英文状态下，冒号后面有一个空格，"/"代表整个网站
 
-### Robots协议举例
+### 2. Robots协议举例
 
 	禁止所有机器人访问
 		User-agent: *
