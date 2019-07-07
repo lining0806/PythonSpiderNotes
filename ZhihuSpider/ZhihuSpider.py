@@ -2,6 +2,7 @@
 '''
 网络爬虫之用户名密码及验证码登陆：爬取知乎网站
 '''
+from __future__ import print_function
 import requests
 import ConfigParser
 
@@ -24,10 +25,10 @@ def create_session():
     }
     r = session.post('http://www.zhihu.com/login/email', data=login_data, headers=header)
     if r.json()['r'] == 1:
-        print 'Login Failed, reason is:',
+        print('Login Failed, reason is:', end=' ')
         for m in r.json()['data']:
-            print r.json()['data'][m]
-        print 'So we use cookies to login in...'
+            print(r.json()['data'][m])
+        print('So we use cookies to login in...')
         has_cookies = False
         for key in cookies:
             if key != '__name__' and cookies[key] != '':

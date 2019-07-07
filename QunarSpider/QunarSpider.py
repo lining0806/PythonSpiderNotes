@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+from __future__ import print_function
 import os
 import time
 import datetime
@@ -39,7 +40,7 @@ def one_driver_ticket(driver, from_city, to_city):
         # 保存页面
         # print driver.page_source
         source_code = driver.find_element_by_xpath("//*").get_attribute("outerHTML")
-        print type(source_code)
+        print(type(source_code))
         dstdir = u'./ticket/'
         if not exists(dstdir):
             makedirs(dstdir)
@@ -51,17 +52,17 @@ def one_driver_ticket(driver, from_city, to_city):
         try:
             next_page = driver.find_element_by_id('nextXI3')
         except Exception as e:
-            print e
+            print(e)
             pass
-        print "page: %d" % (page_num+1)
+        print("page: %d" % (page_num+1))
         if next_page:
             try:
                 next_page.click()
                 time.sleep(2) # 控制间隔时间，等待浏览器反映
                 page_num += 1
             except Exception as e:
-                print 'next_page could not be clicked'
-                print e
+                print('next_page could not be clicked')
+                print(e)
                 flag = False
         else:
             flag = False
@@ -75,7 +76,7 @@ def get_proxy_list(file_path):
             proxy_list.append(line.replace('\r', '').replace('\n', ''))
         f.close()
     except Exception as e:
-        print e
+        print(e)
     return proxy_list
 
 def ticket_worker_proxy(city_proxy):
@@ -133,10 +134,10 @@ def all_ticket_no_proxy():
 
 
 if __name__ == '__main__':
-    print "start"
+    print("start")
     start = datetime.datetime.now()
     # all_ticket_proxy() # proxy
     all_ticket_no_proxy() # no proxy
     end = datetime.datetime.now()
-    print "end"
-    print "time: ", end-start
+    print("end")
+    print("time: ", end-start)

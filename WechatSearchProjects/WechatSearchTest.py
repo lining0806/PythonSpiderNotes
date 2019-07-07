@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+from __future__ import print_function
 import sys
 import re
 import urllib, urllib2
@@ -95,7 +96,7 @@ def func(tuple):
 
     for item in titleurl:
         url = item["link"]
-        print "url:", url
+        print("url:", url)
         content = GetContent(url)
         item["content"] = content
         ContentSave(item)
@@ -119,4 +120,4 @@ if __name__ == '__main__':
     #     func(tuple)
 
     end = datetime.datetime.now()
-    print "last time: ", end-start
+    print("last time: ", end-start)
