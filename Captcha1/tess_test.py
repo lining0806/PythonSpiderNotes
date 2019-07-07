@@ -1,5 +1,6 @@
 # coding: utf-8
 
+from __future__ import print_function
 import os
 import sys
 import subprocess
@@ -149,10 +150,10 @@ if __name__=='__main__':
             image_name = sys.argv[1]
             digits = True
         else:
-            print "Please Input the Correct Image Name!"
+            print("Please Input the Correct Image Name!")
             sys.exit(0)
     else:
-        print "Too Many Arguments!"
+        print("Too Many Arguments!")
         sys.exit(0)
 
 
@@ -161,12 +162,12 @@ if __name__=='__main__':
     binary(image_name, binary_image_name)
 
     im = Image.open(binary_image_name)
-    print im.format, im.size, im.mode
+    print(im.format, im.size, im.mode)
 
 
     if digits:
         text = image_file_to_string(binary_image_name, bool_digits=digits)
-        print text.replace("\n", "")
+        print(text.replace("\n", ""))
     else:
         # 投影法去干扰线
         fpathandname , fext = os.path.splitext(binary_image_name)
@@ -229,4 +230,4 @@ if __name__=='__main__':
         # text = image_to_string(im)
         # print text.replace("\n", "")
         text = image_file_to_string(midu_image_name_pro1, bool_digits=digits)
-        print text.replace("\n", "")
+        print(text.replace("\n", ""))
