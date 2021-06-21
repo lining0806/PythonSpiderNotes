@@ -18,7 +18,7 @@
 #                                             host = "localhost",
 #                                             db = "testwechat", # you must build database named testwechat
 #                                             user = "root",
-#                                             passwd = "fireling",
+#                                             passwd = "testpasswd",
 #                                             charset = "utf8")
 #     # pipeline default function
 #     def process_item(self, item, spider):
@@ -37,7 +37,7 @@ class WechatprojectPipeline(object):
     def __init__(self):
         connection = pymongo.Connection(host = "localhost", port = 27017)
         db = connection["testwechat"] # you need no build database named testdouban
-        # db.authenticate(name = "root", password = "fireling") # no name and password for localhost
+        # db.authenticate(name = "root", password = "testpasswd") # no name and password for localhost
         self.posts = db["result"] # you need not build collection named book
     # pipeline default function
     def process_item(self, item, spider):
